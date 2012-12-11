@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  year: MyString
+  maker: MyString
+  submodel: MyString
+  body_style: MyString
+  engines: MyString
+  transmission: MyString
+  drivetrains: MyString
+  performance: MyString
+  handling: MyString
+  exterior: MyText
+  interior: MyText
+
+two:
+  year: MyString
+  maker: MyString
+  submodel: MyString
+  body_style: MyString
+  engines: MyString
+  transmission: MyString
+  drivetrains: MyString
+  performance: MyString
+  handling: MyString
+  exterior: MyText
+  interior: MyText

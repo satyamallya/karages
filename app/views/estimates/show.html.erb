@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @estimate.id %>
+</p>
+
+<p>
+  <b>Repair:</b>
+  <%= @estimate.repair_id %>
+</p>
+
+<p>
+  <b>Vehicle:</b>
+  <%= @estimate.vehicle_id %>
+</p>
+
+<p>
+  <b>Labor hrs:</b>
+  <%= @estimate.labor_hrs %>
+</p>
+
+<p>
+  <b>Labor cost:</b>
+  <%= @estimate.labor_cost %>
+</p>
+
+<p>
+  <b>Parts cost:</b>
+  <%= @estimate.parts_cost %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @estimate.duration %>
+</p>
+
+<p>
+  <b>Second parts cost:</b>
+  <%= @estimate.second_parts_cost %>
+</p>
+
+
+<%= link_to 'Edit', edit_estimate_path(@estimate) %> |
+<%= link_to 'Back', estimates_path %>

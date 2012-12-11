@@ -1,0 +1,61 @@
+<%= form_for(@vehicle) do |f| %>
+  <% if @vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+      <% @vehicle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :maker %><br />
+    <%= f.text_field :maker %>
+  </div>
+  <div class="field">
+    <%= f.label :submodel %><br />
+    <%= f.text_field :submodel %>
+  </div>
+  <div class="field">
+    <%= f.label :body_style %><br />
+    <%= f.text_field :body_style %>
+  </div>
+  <div class="field">
+    <%= f.label :engines %><br />
+    <%= f.text_field :engines %>
+  </div>
+  <div class="field">
+    <%= f.label :transmission %><br />
+    <%= f.text_field :transmission %>
+  </div>
+  <div class="field">
+    <%= f.label :drivetrains %><br />
+    <%= f.text_field :drivetrains %>
+  </div>
+  <div class="field">
+    <%= f.label :performance %><br />
+    <%= f.text_field :performance %>
+  </div>
+  <div class="field">
+    <%= f.label :handling %><br />
+    <%= f.text_field :handling %>
+  </div>
+  <div class="field">
+    <%= f.label :exterior %><br />
+    <%= f.text_area :exterior %>
+  </div>
+  <div class="field">
+    <%= f.label :interior %><br />
+    <%= f.text_area :interior %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

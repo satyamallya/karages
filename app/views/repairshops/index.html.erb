@@ -1,0 +1,35 @@
+<h1>Listing repairshops</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Zip code</th>
+    <th>Lat</th>
+    <th>Long</th>
+    <th>Phone num</th>
+    <th>Business license</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @repairshops.each do |repairshop| %>
+  <tr>
+    <td><%= repairshop.name %></td>
+    <td><%= repairshop.address %></td>
+    <td><%= repairshop.zip_code %></td>
+    <td><%= repairshop.lat %></td>
+    <td><%= repairshop.long %></td>
+    <td><%= repairshop.phone_num %></td>
+    <td><%= repairshop.business_license %></td>
+    <td><%= link_to 'Show', repairshop %></td>
+    <td><%= link_to 'Edit', edit_repairshop_path(repairshop) %></td>
+    <td><%= link_to 'Destroy', repairshop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Repairshop', new_repairshop_path %>

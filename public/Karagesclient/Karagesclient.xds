@@ -1,0 +1,47 @@
+{
+    "name": "Karagesclient",
+    "settings": {
+        "urlPrefix": "http://localhost:3000/mobileKarages",
+        "spacesToIndent": 4,
+        "exportPath": "/Users/satya/karages/public/mobileKarages",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 676,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "204d8026-880c-499d-bda5-e1b355c871ad": {
+            "paths": [
+                "metadata/view/MyContainer",
+                "app/view/override/MyContainer.js",
+                "app/view/MyContainer.js"
+            ],
+            "className": "MyContainer"
+        },
+        "76382f75-164d-4f11-b697-3960f50171cd": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "204d8026-880c-499d-bda5-e1b355c871ad"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "76382f75-164d-4f11-b697-3960f50171cd"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

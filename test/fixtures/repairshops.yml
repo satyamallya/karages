@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  zip_code: MyString
+  lat: MyString
+  long: MyString
+  phone_num: MyString
+  business_license: MyString
+
+two:
+  name: MyString
+  address: MyString
+  zip_code: MyString
+  lat: MyString
+  long: MyString
+  phone_num: MyString
+  business_license: MyString

@@ -1,0 +1,45 @@
+<%= form_for(@repairshop) do |f| %>
+  <% if @repairshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@repairshop.errors.count, "error") %> prohibited this repairshop from being saved:</h2>
+
+      <ul>
+      <% @repairshop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br />
+    <%= f.text_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br />
+    <%= f.text_field :long %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_num %><br />
+    <%= f.text_field :phone_num %>
+  </div>
+  <div class="field">
+    <%= f.label :business_license %><br />
+    <%= f.text_field :business_license %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

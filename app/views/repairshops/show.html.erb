@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @repairshop.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @repairshop.address %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%= @repairshop.zip_code %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @repairshop.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @repairshop.long %>
+</p>
+
+<p>
+  <b>Phone num:</b>
+  <%= @repairshop.phone_num %>
+</p>
+
+<p>
+  <b>Business license:</b>
+  <%= @repairshop.business_license %>
+</p>
+
+
+<%= link_to 'Edit', edit_repairshop_path(@repairshop) %> |
+<%= link_to 'Back', repairshops_path %>

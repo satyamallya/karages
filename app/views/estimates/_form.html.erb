@@ -1,0 +1,49 @@
+<%= form_for(@estimate) do |f| %>
+  <% if @estimate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estimate.errors.count, "error") %> prohibited this estimate from being saved:</h2>
+
+      <ul>
+      <% @estimate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :repair_id %><br />
+    <%= f.text_field :repair_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicle_id %><br />
+    <%= f.text_field :vehicle_id %>
+  </div>
+  <div class="field">
+    <%= f.label :labor_hrs %><br />
+    <%= f.text_field :labor_hrs %>
+  </div>
+  <div class="field">
+    <%= f.label :labor_cost %><br />
+    <%= f.text_field :labor_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :parts_cost %><br />
+    <%= f.text_field :parts_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :second_parts_cost %><br />
+    <%= f.text_field :second_parts_cost %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

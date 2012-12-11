@@ -1,0 +1,43 @@
+<h1>Listing vehicles</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Maker</th>
+    <th>Submodel</th>
+    <th>Body style</th>
+    <th>Engines</th>
+    <th>Transmission</th>
+    <th>Drivetrains</th>
+    <th>Performance</th>
+    <th>Handling</th>
+    <th>Exterior</th>
+    <th>Interior</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vehicles.each do |vehicle| %>
+  <tr>
+    <td><%= vehicle.year %></td>
+    <td><%= vehicle.maker %></td>
+    <td><%= vehicle.submodel %></td>
+    <td><%= vehicle.body_style %></td>
+    <td><%= vehicle.engines %></td>
+    <td><%= vehicle.transmission %></td>
+    <td><%= vehicle.drivetrains %></td>
+    <td><%= vehicle.performance %></td>
+    <td><%= vehicle.handling %></td>
+    <td><%= vehicle.exterior %></td>
+    <td><%= vehicle.interior %></td>
+    <td><%= link_to 'Show', vehicle %></td>
+    <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
+    <td><%= link_to 'Destroy', vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vehicle', new_vehicle_path %>
